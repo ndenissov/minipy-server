@@ -1,0 +1,17 @@
+[project]
+name = "minipy-service"
+version = "1.0.0"
+description = "Lightweight technical web service for minipy3 Python code minimization"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "minipy3>=1.3.0",
+]
+
+[project.scripts]
+minipy-service = "app:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
